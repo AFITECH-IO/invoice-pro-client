@@ -5,10 +5,11 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { classNames } from "~src/utils";
 
 type DropdownProps = {
-  items: DropdownItem[];
+  items?: DropdownItem[];
   hasLogout?: boolean;
   logoutHander?: () => void;
   position?: "left" | "right";
+  children?: React.ReactNode;
 };
 
 type DropdownItem = {
@@ -21,7 +22,7 @@ export const Dropdown = (props: DropdownProps) => {
   const [dropdownItems, setDropdownItems] = useState<DropdownItem[]>([]);
 
   useEffect(() => {
-    setDropdownItems(props.items);
+    if (props.items) setDropdownItems(props.items);
   }, [props.items]);
 
   function renderDropdownItems() {
@@ -36,7 +37,7 @@ export const Dropdown = (props: DropdownProps) => {
               "block px-4 py-2 text-sm"
             )}
           >
-            {item.icon && (item.icon)}
+            {item.icon && item.icon}
             {item.label}
           </a>
         )}
@@ -73,7 +74,8 @@ export const Dropdown = (props: DropdownProps) => {
       >
         <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
-            {renderDropdownItems()}
+            {props.items && renderDropdownItems()}
+            {props.children && props.children}
             {props.hasLogout && (
               <form onSubmit={onLogoutHandler}>
                 <Menu.Item>
