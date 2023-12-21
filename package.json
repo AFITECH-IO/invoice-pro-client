@@ -1,0 +1,28 @@
+{
+  "name": "invoicepro",
+  "version": "1.0.0",
+  "description": "SaaS Application Frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Landon McKell",
+  "license": "MIT",
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.1.1",
+    "axios": "^1.6.2",
+    "parcel": "^2.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0",
+    "recoil": "^0.7.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.0"
+  }
+}
