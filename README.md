@@ -1,1 +1,1 @@
-# invoice-pro-client
+# InvoicePro Client
