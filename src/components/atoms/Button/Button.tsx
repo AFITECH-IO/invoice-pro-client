@@ -41,7 +41,7 @@ export const Button = (props: ButtonProps) => {
   function renderButtonColor(color: string) {
     switch (color) {
       case "primary":
-        return "bg-blue-600 hover:bg-indigo-500 focus-visible:ring-indigo-600 text-white";
+        return "bg-purple-600 hover:bg-indigo-500 focus-visible:ring-indigo-600 text-white";
       case "secondary":
         return "bg-gray-600 hover:bg-gray-500 focus-visible:ring-gray-600 text-white";
       case "success":
@@ -57,7 +57,7 @@ export const Button = (props: ButtonProps) => {
       case "dark":
         return "bg-gray-800 hover:bg-gray-700 focus-visible:ring-gray-800 text-white";
       default:
-        return "bg-blue-600 hover:bg-indigo-500 focus-visible:ring-indigo-600";
+        return "bg-purple-600 hover:bg-indigo-500 focus-visible:ring-indigo-600";
     }
   }
   function renderButtonPill(isPill: boolean) {

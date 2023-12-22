@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Outlet } from "react-router-dom";
-import { Footer, Header } from "~src/components/molecules";
+import { Footer, Header } from "~src/components";
 import { HomePage } from "~src/features";
 
 function MainRoot() {

@@ -1,7 +1,12 @@
-import * as React from 'react'
+import * as React from 'react';
+import { Process, VideoHero, HomeFeatures } from '~src/components';
 
 export const HomePage = () => {
   return (
-    <h1 className="text-4xl">Home Page</h1>
+    <>
+      <VideoHero />
+      <Process />
+      <HomeFeatures />
+    </>
   )
 }

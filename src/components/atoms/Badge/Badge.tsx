@@ -25,7 +25,7 @@ export const Badge = (props: BadgeProps) => {
   function renderBadgeColor(textColor: string) {
     switch (textColor) {
       case "primary":
-        return "bg-blue-50 text-blue-700 ring-blue-500/10";
+        return "bg-purple-50 text-purple-700 ring-purple-500/10";
       case "secondary":
         return "bg-gray-50 text-gray-700 ring-gray-500/10";
       case "success":
@@ -35,7 +35,7 @@ export const Badge = (props: BadgeProps) => {
       case "warning":
         return "bg-yellow-50 text-yellow-700 ring-yellow-500/10";
       case "info":
-        return "bg-blue-50 text-blue-700 ring-blue-500/10";
+        return "bg-purple-50 text-purple-700 ring-purple-500/10";
       case "light":
         return "bg-gray-50 text-gray-700 ring-gray-500/10";
       case "dark":
