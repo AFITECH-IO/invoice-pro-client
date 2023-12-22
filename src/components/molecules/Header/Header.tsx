@@ -3,10 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Dropdown } from "~src/components/atoms";
 import { MobileHeader } from "./mobile-header";
 
-type Props = {};
-
-const Header = (props: Props) => {
-  
+export const Header = () => {
   return (
     <header className="absolute w-full z-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -98,7 +95,7 @@ const Header = (props: Props) => {
               <li>
                 <NavLink
                   to="/signup"
-                  className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3"
+                  className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3 p-2"
                 >
                   Sign up
                 </NavLink>
