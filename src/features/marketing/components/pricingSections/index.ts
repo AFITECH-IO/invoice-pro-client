@@ -1,1 +1,2 @@
-export * from "./PricingTables"
+export * from "./PricingTables";
+export * from "./PricingFAQ";

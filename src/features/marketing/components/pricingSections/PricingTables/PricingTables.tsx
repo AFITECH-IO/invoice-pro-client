@@ -10,7 +10,7 @@ export const PricingTables = (props: PricingTablesProps) => {
   const [annual, setAnnual] = useState<boolean>(true);
   return (
     <section className="relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:border-b lg:border-gray-800">
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12">
@@ -54,7 +54,7 @@ export const PricingTables = (props: PricingTablesProps) => {
               </div>
             </div>
 
-            <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
+            <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-2 lg:gap-6 items-start lg:max-w-none">
               {/* Pricing table 1 */}
               <div
                 className="relative flex flex-col h-full p-6 bg-gray-800"
@@ -62,12 +62,12 @@ export const PricingTables = (props: PricingTablesProps) => {
                 data-aos-delay="700"
               >
                 <div className="mb-4 pb-4 border-b border-gray-700">
-                  <div className="text-2xl text-purple-600 mb-1 font-semibold">Essential</div>
+                  <div className="text-2xl text-purple-600 mb-1 font-semibold">Free Version</div>
                   <div className="inline-flex items-baseline mb-2">
                     <span className="text-2xl md:text-3xl font-medium text-gray-400">
                       $
                     </span>
-                    <span className="text-3xl text-gray-50">{annual ? "49" : "55"}</span>
+                    <span className="text-4xl font-semibold text-gray-50">{annual ? "0" : "0"}</span>
                     <span className="font-medium text-gray-400">/mo</span>
                   </div>
                   <div className="text-gray-400">
@@ -140,12 +140,12 @@ export const PricingTables = (props: PricingTablesProps) => {
                   </div>
                 </div>
                 <div className="mb-4 pb-4 border-b border-gray-700">
-                  <div className="text-2xl text-purple-600 mb-1 font-semibold">Premium</div>
+                  <div className="text-2xl text-purple-600 mb-1 font-semibold">Paid Version</div>
                   <div className="inline-flex items-baseline mb-2">
                     <span className="text-2xl md:text-3xl font-medium text-gray-400">
                       $
                     </span>
-                    <span className="text-3xl text-gray-50">{annual ? "79" : "85"}</span>
+                    <span className="text-4xl font-semibold text-gray-50">{annual ? "79" : "85"}</span>
                     <span className="font-medium text-gray-400">/mo</span>
                   </div>
                   <div className="text-gray-400">
@@ -154,7 +154,7 @@ export const PricingTables = (props: PricingTablesProps) => {
                   </div>
                 </div>
                 <div className="font-medium mb-3 text-gray-50">
-                  All features of Essential plus:
+                  All features of Free Version plus:
                 </div>
                 <ul className="text-gray-400 -mb-3 grow">
                   <li className="flex items-center mb-3">
@@ -219,7 +219,7 @@ export const PricingTables = (props: PricingTablesProps) => {
               </div>
 
               {/* Pricing table 3 */}
-              <div
+              {/* <div
                 className="relative flex flex-col h-full p-6 bg-gray-800"
                 data-aos="fade-up"
                 data-aos-delay="800"
@@ -230,7 +230,7 @@ export const PricingTables = (props: PricingTablesProps) => {
                     <span className="text-2xl md:text-3xl font-medium text-gray-400">
                       $
                     </span>
-                    <span className="text-3xl text-gray-50">{annual ? "129" : "135"}</span>
+                    <span className="text-4xl font-semibold text-gray-50">{annual ? "129" : "135"}</span>
                     <span className="font-medium text-gray-400">/mo</span>
                   </div>
                   <div className="text-gray-400">
@@ -311,7 +311,7 @@ export const PricingTables = (props: PricingTablesProps) => {
                     Start free trial
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
