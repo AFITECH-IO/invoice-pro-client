@@ -2,6 +2,7 @@ import * as React from "react";
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "~src/components";
 import { HomePage } from "~src/features";
+import { PricingPage } from "~src/features";
 
 function MainRoot() {
   return (
@@ -47,7 +48,7 @@ export const mainRoutes = [
       {
         path: "pricing",
         name: "Pricing",
-        element: "Pricing",
+        element: <PricingPage />,
       },
       {
         path: "blog",

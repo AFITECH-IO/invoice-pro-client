@@ -8,3 +8,4 @@ export * from "./LabelTextArea";
 // export * from "./LabelCheckbox";
 // export * from "./LabelRadio";
 // export * from "./LabelSwitch";
+export * from "./Toggle";
