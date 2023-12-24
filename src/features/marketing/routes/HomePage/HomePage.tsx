@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Process, VideoHero, HomeFeatures } from '~src/components';
+import { Process, VideoHero, HomeFeatures, HomeTabs } from '../../components';
 
 export const HomePage = () => {
   return (
@@ -7,6 +7,7 @@ export const HomePage = () => {
       <VideoHero />
       <Process />
       <HomeFeatures />
+      <HomeTabs />
     </>
   )
 }

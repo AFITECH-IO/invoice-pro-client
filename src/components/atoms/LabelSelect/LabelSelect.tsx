@@ -8,6 +8,7 @@ type LabelSelectProps = {
   placeholder?: string;
   hasLabel?: boolean;
   labelText?: string;
+  onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 };
 
 type OptionItems = {

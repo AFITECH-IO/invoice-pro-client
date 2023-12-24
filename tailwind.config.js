@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/components/**/*.tsx",
-    "./src/features/**/components/**/*.tsx",
+    "./src/features/**/components/**/**/*.tsx",
     "./src/features/**/routes/**/*.tsx",
     "./src/routes/*.tsx",
   ],
