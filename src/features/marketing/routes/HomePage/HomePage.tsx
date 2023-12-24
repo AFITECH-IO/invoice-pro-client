@@ -1,5 +1,11 @@
-import * as React from 'react';
-import { Process, VideoHero, HomeFeatures, HomeTabs } from '../../components';
+import * as React from "react";
+import {
+  Process,
+  VideoHero,
+  HomeFeatures,
+  HomeTabs,
+  HomeTarget,
+} from "../../components";
 
 export const HomePage = () => {
   return (
@@ -8,6 +14,7 @@ export const HomePage = () => {
       <Process />
       <HomeFeatures />
       <HomeTabs />
+      <HomeTarget />
     </>
-  )
-}
+  );
+};
