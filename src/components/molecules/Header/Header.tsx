@@ -49,38 +49,20 @@ export const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/about"
+                  to="/about-us"
                   className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   About us
                 </NavLink>
               </li>
-              <Dropdown>
-                <li>
-                  <NavLink
-                    to="/contact"
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight"
-                  >
-                    Contact us
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/help/frequently-asked-questions"
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight"
-                  >
-                    Help center
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/404"
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight"
-                  >
-                    404
-                  </NavLink>
-                </li>
-              </Dropdown>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Contact
+                </NavLink>
+              </li>
             </ul>
 
             <ul className="flex grow justify-end flex-wrap items-center">

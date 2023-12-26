@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "~src/components";
-import { HomePage } from "~src/features";
+import { AboutPage, HomePage } from "~src/features";
 import { PricingPage } from "~src/features";
 
 function MainRoot() {
@@ -28,7 +28,7 @@ export const mainRoutes = [
       {
         path: "about-us",
         name: "AboutUs",
-        element: "About Us",
+        element: <AboutPage />,
       },
       {
         path: "contact-us",

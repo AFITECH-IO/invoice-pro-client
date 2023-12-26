@@ -123,7 +123,7 @@ export const PricingTables = (props: PricingTablesProps) => {
                     className="py-2 px-4 flex justify-center text-white bg-purple-600 hover:bg-purple-700 w-full"
                     href="#0"
                   >
-                    Start free trial
+                    Sign Up
                   </a>
                 </div>
               </div>
@@ -213,7 +213,7 @@ export const PricingTables = (props: PricingTablesProps) => {
                     className="py-2 px-4 flex justify-center text-white bg-purple-600 hover:bg-purple-700 w-full"
                     href="#0"
                   >
-                    Start free trial
+                    Go Pro
                   </a>
                 </div>
               </div>
