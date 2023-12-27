@@ -1,10 +1,12 @@
-import * as React from 'react';
-import { FeatureHero } from '../../components';
+import * as React from "react";
+import { FeatureHero, FeatureStats, FeatureZigZag } from "../../components";
 
 export const FeaturePage = () => {
-    return (
-        <>
-            <FeatureHero />
-        </>
-    );
+  return (
+    <>
+      <FeatureHero />
+      <FeatureStats />
+      <FeatureZigZag />
+    </>
+  );
 };
