@@ -48,7 +48,7 @@ export const MobileHeader = (props: MobileHeaderProps) => {
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
         <span className="sr-only">Menu</span>
-        <Bars3Icon className="h-6 w-6" />
+        <Bars3Icon className="h-6 w-6 text-gray-50" />
       </button>
 
       <nav
@@ -80,7 +80,7 @@ export const MobileHeader = (props: MobileHeaderProps) => {
               Pricing
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/blog"
               className="flex text-gray-300 hover:text-gray-200 py-2"
@@ -88,7 +88,7 @@ export const MobileHeader = (props: MobileHeaderProps) => {
             >
               Blog
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/about"
@@ -98,18 +98,18 @@ export const MobileHeader = (props: MobileHeaderProps) => {
               About us
             </NavLink>
           </li>
-          <li className="py-2 my-2 border-t border-b border-gray-700">
+          <li>
+            <NavLink
+              to="/contact"
+              className="flex text-gray-300 hover:text-gray-200 py-2"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              Contact us
+            </NavLink>
+          </li>
+          {/* <li className="py-2 my-2 border-t border-b border-gray-700">
             <span className="flex text-gray-300 py-2">Support</span>
             <ul className="pl-4">
-              <li>
-                <NavLink
-                  to="/contact"
-                  className="text-sm flex font-medium text-gray-400 hover:text-gray-200 py-2"
-                  onClick={() => setMobileNavOpen(false)}
-                >
-                  Contact us
-                </NavLink>
-              </li>
               <li>
                 <NavLink
                   to="/help/frequently-asked-questions"
@@ -129,7 +129,7 @@ export const MobileHeader = (props: MobileHeaderProps) => {
                 </NavLink>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/signin"
