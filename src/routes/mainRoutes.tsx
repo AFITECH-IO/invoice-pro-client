@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "~src/components";
-import { AboutPage, HomePage } from "~src/features";
+import { AboutPage, FeaturePage, HomePage } from "~src/features";
 import { PricingPage } from "~src/features";
 
 function MainRoot() {
@@ -23,6 +23,7 @@ export const mainRoutes = [
     children: [
       {
         index: true,
+        name: "Home",
         element: <HomePage />,
       },
       {
@@ -36,11 +37,6 @@ export const mainRoutes = [
         element: "Contact Us",
       },
       {
-        path: "help-center",
-        name: "HelpCenter",
-        element: "Help Center",
-      },
-      {
         path: "*",
         name: "NotFound",
         element: "404",
@@ -51,14 +47,19 @@ export const mainRoutes = [
         element: <PricingPage />,
       },
       {
+        path: "features",
+        name: "Features",
+        element: <FeaturePage />,
+      },
+      {
+        path: "help-center",
+        name: "HelpCenter",
+        element: "Help Center",
+      },
+      {
         path: "blog",
         name: "Blog",
         element: "Blog",
-      },
-      {
-        path: "features",
-        name: "Features",
-        element: "Features",
       },
     ],
   },

@@ -18,12 +18,10 @@ export const AboutTeam = (props: AboutTeamProps) => {
             </p>
           </div>
 
-          {/* Team members */}
           <div
             className="sm:flex sm:flex-wrap sm:justify-center -my-4 sm:-my-8 sm:-mx-3"
             data-aos-id-team
           >
-            {/* 1st member */}
             <div
               className="sm:w-1/2 md:w-1/3 lg:w-1/4 py-4 sm:py-8 sm:px-3"
               data-aos="fade-up"
