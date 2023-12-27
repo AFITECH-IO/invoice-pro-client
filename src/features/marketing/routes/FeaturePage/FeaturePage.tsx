@@ -1,5 +1,10 @@
 import * as React from "react";
-import { FeatureHero, FeatureStats, FeatureZigZag } from "../../components";
+import {
+  FeatureHero,
+  FeatureStats,
+  FeatureZigZag,
+  FeatureBlocks,
+} from "../../components";
 
 export const FeaturePage = () => {
   return (
@@ -7,6 +12,7 @@ export const FeaturePage = () => {
       <FeatureHero />
       <FeatureStats />
       <FeatureZigZag />
+      <FeatureBlocks />
     </>
   );
 };
