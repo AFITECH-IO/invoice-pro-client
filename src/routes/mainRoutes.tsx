@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "~src/components";
-import { AboutPage, FeaturePage, HomePage } from "~src/features";
+import { AboutPage, FeaturePage, HomePage, ContactPage } from "~src/features";
 import { PricingPage } from "~src/features";
 
 function MainRoot() {
@@ -34,7 +34,7 @@ export const mainRoutes = [
       {
         path: "contact-us",
         name: "ContactUs",
-        element: "Contact Us",
+        element: <ContactPage />,
       },
       {
         path: "*",

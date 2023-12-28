@@ -91,7 +91,7 @@ export const MobileHeader = (props: MobileHeaderProps) => {
           </li> */}
           <li>
             <NavLink
-              to="/about"
+              to="/about-us"
               className="flex text-gray-300 hover:text-gray-200 py-2"
               onClick={() => setMobileNavOpen(false)}
             >
@@ -100,7 +100,7 @@ export const MobileHeader = (props: MobileHeaderProps) => {
           </li>
           <li>
             <NavLink
-              to="/contact"
+              to="/contact-us"
               className="flex text-gray-300 hover:text-gray-200 py-2"
               onClick={() => setMobileNavOpen(false)}
             >

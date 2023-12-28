@@ -7,8 +7,11 @@ type LabelSelectProps = {
   defaultValue?: string;
   placeholder?: string;
   hasLabel?: boolean;
+  hasError?: boolean;
   labelText?: string;
-  onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  onChange?: (event: React.ChangeEvent) => void;
+  hasRequiredIndicator?: boolean;
+  value?: string;
 };
 
 type OptionItems = {
@@ -32,20 +35,26 @@ export const LabelSelect = (props: LabelSelectProps) => {
       {props.hasLabel && (
         <label
           htmlFor={`${props.name}Input`}
-          className="block text-sm font-medium leading-6 text-gray-900"
+          className="block text-sm font-medium leading-6 text-gray-50"
         >
-          {props.labelText}
+          {props.labelText}{" "}
+          {props.hasRequiredIndicator && (
+            <span className="text-red-600">*</span>
+          )}
         </label>
       )}
       <select
         id={`${props.name}Input`}
         name={props.name}
-        className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-50 bg-[#151719] ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
         defaultValue={props.defaultValue}
       >
         <option>{props.placeholder || "Select Option..."}</option>
         {renderOptions()}
       </select>
+      {props.hasError && (
+        <p className="text-red-500 text-sm mt-2">This field is required</p>
+      )}
     </>
   );
 };

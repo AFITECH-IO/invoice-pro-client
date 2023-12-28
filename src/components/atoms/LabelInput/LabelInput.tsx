@@ -13,6 +13,7 @@ type LabelInputProps = {
   hasLabel?: boolean;
   hasValidationError?: boolean;
   hasValidationSuccess?: boolean;
+  hasRequiredIndicator?: boolean;
 };
 
 export const LabelInput = (props: LabelInputProps) => {
@@ -43,9 +44,12 @@ export const LabelInput = (props: LabelInputProps) => {
       {props.hasLabel && (
         <label
           htmlFor={`${props.name}Input`}
-          className="block text-sm font-medium leading-6 text-gray-900"
+          className="block text-sm font-medium leading-6 text-gray-50"
         >
-          {props.labelText}
+          {props.labelText}{" "}
+          {props.hasRequiredIndicator && (
+            <span className="text-red-600">*</span>
+          )}
         </label>
       )}
       <div className="mt-2">
@@ -55,14 +59,19 @@ export const LabelInput = (props: LabelInputProps) => {
           id={`${props.name}Input`}
           onChange={props.onChange}
           value={props.value}
-          className={`block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ${renderInputRings(
+          className={`form-input block w-full rounded-md border-0 py-1.5 text-gray-50 shadow-sm ${renderInputRings(
             inputStatus
           )} placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6`}
           placeholder={props.placeholder || "Placeholder..."}
         />
         {props.hasHelperText && (
-          <p className="mt-2 text-sm text-gray-500" id="email-description">
+          <p className="mt-2 text-sm text-gray-300" id="helperDescription">
             {props.helperText}
+          </p>
+        )}
+        {props.hasValidationError && (
+          <p className="mt-2 text-sm text-red-500" id="errorDescription">
+            This field is required
           </p>
         )}
       </div>
